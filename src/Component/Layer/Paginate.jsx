@@ -55,13 +55,13 @@ const Paginate = ({itemsPerPage}) => {
       <ReactPaginate
         breakLabel="..."
         nextLabel={<FaArrowRight className='' />}
-        nextClassName="page-item bg-slate-400 rounded-full w-[50px] h-[50px] flex items-center justify-center cursor-pointer hover:bg-slate-200 transition-all duration-300 ml-[30px] "
+        nextClassName="page-item bg-white shadow rounded-full w-[50px] h-[50px] flex items-center justify-center cursor-pointer hover:bg-slate-200 transition-all duration-300 ml-[30px] "
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
         
         previousLabel={<FaArrowLeft className='' />}
-        previousClassName="page-item bg-slate-400 rounded-full w-[50px] h-[50px] flex items-center justify-center cursor-pointer hover:bg-slate-200 transition-all duration-300 mr-[30px] "
+        previousClassName="page-item bg-white shadow rounded-full w-[50px] h-[50px] flex items-center justify-center cursor-pointer hover:bg-slate-200 transition-all duration-300 mr-[30px] "
         renderOnZeroPageCount={null}
        
         pageClassName="page-item liCss flex items-center justify-center text-transparent ml-4 text-[0px] "

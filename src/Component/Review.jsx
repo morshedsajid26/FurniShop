@@ -6,23 +6,56 @@ import Image from './Layer/Image'
  import review from '/review.png'
  import user from '/user.png'
  import Slider from 'react-slick';
-//  import "slick-carousel/slick/slick.css";
+
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import ReviewCard from './Layer/ReviewCard'
 
 
+
+function SampleNextArrow(props) {
+  const {  style, onClick } = props;
+  return (
+    <div
+      className='absolute w-[50px] h-[50px] left-[74px] bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow  hover:bg-[#286F6C] hover:text-white transition-all duration-300 cursor-pointer '
+      style={{ ...style, display: "flex", background: "" }}
+      onClick={onClick}
+    >
+      <div><FaArrowRight  className='text-[#23262F] ' />
+      </div>
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const {  style, onClick } = props;
+  return (
+    <div
+     className='absolute w-[50px] h-[50px] left-0  bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow hover:bg-[#286F6C] hover:text-white transition-all duration-300 cursor-pointer'
+      style={{ ...style,display: "flex",background: "" }}
+      onClick={onClick}
+    >
+       <div><FaArrowLeft className='text-[#23262F] ' />
+       </div>
+    </div>
+  );
+}
 
  
 
 const Review = () => {
 
 
-    var settings = {
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      };
+  var settings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+    
+  };
 
   return (
     <div >
@@ -32,7 +65,7 @@ const Review = () => {
         <h1 className='font-Saira font-semibold text-[40px] text-[#23262F] '>What people are saying about us</h1>
 
 
-         <div className="review w-[570px] bg-slate-100 mt-[32px]">
+         {/* <div className="review w-[570px] bg-slate-100 mt-[32px]">
 
       <div className='flex items-center gap-x-5'>
     <div>
@@ -49,36 +82,76 @@ const Review = () => {
 
 <p className='font-Saira text-[20px] text-[#23262F] w-[570px] mt-[29px]'>“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”</p>
 
-        </div>
+        </div> */}
 
         
-        {/* <Slider {...settings}>
+    <div className='max-w-[570px]'>
+    <Slider {...settings}>
 
-       
 
+<div className="review w-[570px] bg-slate-100 mt-[32px]">
+
+<div className='flex items-center gap-x-5'>
 <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-      
+<Image src={user}/>
+</div>
+<div >
+<h3 className='font-Saira font-semibold text-[20px] text-[#23262F]'>Josh Smith</h3>
+<p className='font-Saira text-[14px] text-[#23262F]/70'>Manager of The New York Times</p>
 
-      
-      
-    </Slider> */}
+</div>
+
+
+</div>
+
+<p className='font-Saira text-[20px] text-[#23262F] w-[570px] mt-[29px]'>“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="review w-[570px] bg-slate-100 mt-[32px]">
+
+<div className='flex items-center gap-x-5'>
+<div>
+<Image src={user}/>
+</div>
+<div >
+<h3 className='font-Saira font-semibold text-[20px] text-[#23262F]'>Josh Smith</h3>
+<p className='font-Saira text-[14px] text-[#23262F]/70'>Manager of The New York Times</p>
+
+</div>
+
+
+</div>
+
+<p className='font-Saira text-[20px] text-[#23262F] w-[570px] mt-[29px]'>“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”</p>
+
+</div>
+
+
+
+
+
+
+
+</Slider>
+    </div>
 
 
 
