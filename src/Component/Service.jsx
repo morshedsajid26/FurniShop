@@ -14,11 +14,11 @@ const Service = () => {
         
           <ExperienceFrame/>
 
-        <Container className='w-[337px] md:w-full  md:flex md:flex-row gap-x-[100px]' >
-            <div className="image w-[340px] md:w-[554px]">
+        <Container className='w-[340px] md:w-full  md:flex md:flex-row gap-x-[100px]' >
+            <div className="image w-[340px] md:w-[554px] md:block hidden rounded-[5px] overflow-hidden">
                <Image  src={service}/>
             </div>
-            <div className="text w-[340px] md:w-[579px]">
+            <div className="text w-[340px] md:w-[579px] ">
                 <h1 className='font-Saira text-[24px]  md:text-[40px] font-semibold text-[#23262F] capitalize md:w-[508px]'>We Create your home more aestetic</h1>
 
                 <p className='font-Saira text-[14px] md:text-[20px]  text-[#23262F] mt-[14px]'>Furnitre power is a software as services for multiperpose business management system, </p>
@@ -46,6 +46,10 @@ const Service = () => {
                     </div>
                    
                 </div>
+            </div>
+
+            <div className="image w-[340px] md:w-[554px] md:hidden block rounded-[5px] overflow-hidden mt-[50px]">
+               <Image  src={service}/>
             </div>
         </Container>
     </div>

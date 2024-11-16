@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='bg-[#23262F] pt-[65px] pb-[20px]'>
-        <Container className='' >
-            <div className="top flex justify-between items-center border-b border-[#EAEEF3] pb-[48px]">
+        <Container className='w-[330px] md:w-full' >
+            <div className="top md:flex justify-between items-center md:border-b md:border-[#EAEEF3] pb-[48px] ">
                 <div className="logo">
                     <Image src={footerLogo}/>
                 </div>
-                <div className="icons w-[304px] flex justify-between">
+                <div className="icons w-[304px] flex justify-between mt-5 md:mt-0">
 
                     <div className='w-[48px] h-[48px] bg-[#6D5DD3]/20 cursor-pointer rounded-full flex items-center justify-center text-white'>
                         <FaInstagram/>
@@ -42,7 +42,7 @@ const Footer = () => {
 
            
            
-            <div className="bottom grid grid-cols-5 gap-x-[125px] mt-[64px]">
+            <div className="bottom grid grid-cols-2 md:grid-cols-5 gap-[65px] md:gap-x-[125px]  md:mt-[64px]">
                 <div className='w-[140px] '>
                 <h3 className='font-Raleway font-medium text-[18px] text-white'>Our Products</h3>
 
@@ -147,7 +147,7 @@ const Footer = () => {
 
             </div>
 
-            <p className='font-Inter text-[14px] text-white text-center mt-[70px]'>© NameBrand 2022 - All Rights Reserved</p>
+            <p className='font-Inter text-[12px] md:text-[14px] text-white text-center mt-[70px] md:mt-[70px]'>© NameBrand 2022 - All Rights Reserved</p>
             
         </Container>
     </div>

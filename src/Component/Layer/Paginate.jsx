@@ -54,23 +54,23 @@ const Paginate = ({itemsPerPage}) => {
       </div>
       <ReactPaginate
         breakLabel="..."
-        nextLabel={<div className='w-[50px] h-[50px] flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300' > <FaArrowRight /></div>}
-        nextClassName="page-item bg-white shadow rounded-full w-[50px] h-[50px]  cursor-pointer hover:bg-[#286F6C]  transition-all duration-300 ml-[30px] "
+        nextLabel={<div className='w-full h-full flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300' > <FaArrowRight /></div>}
+        nextClassName="page-item bg-white shadow rounded-full  w-[24px] md:w-[50px] h-[24px] md:h-[50px]  cursor-pointer hover:bg-[#286F6C]  transition-all duration-300 ml-[30px] "
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
         
-        previousLabel={  <div className='w-[50px] h-[50px] flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300' > <FaArrowLeft /></div> }
-        previousClassName="page-item bg-white shadow rounded-full w-[50px] h-[50px]  cursor-pointer hover:bg-[#286F6C]  transition-all duration-300 mr-[30px] "
+        previousLabel={  <div className='w-full h-full  flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300' > <FaArrowLeft /></div> }
+        previousClassName="page-item bg-white shadow rounded-full w-[24px] md:w-[50px] h-[24px]  md:h-[50px]  cursor-pointer hover:bg-[#286F6C]  transition-all duration-300 mr-[30px] "
         renderOnZeroPageCount={null}
        
         pageClassName="page-item liCss flex items-center justify-center text-transparent ml-4 text-[0px] "
 
-         pageLinkClassName="page-link aCss w-[10px] h-[10px] rounded-full border border-black"
+         pageLinkClassName="page-link aCss w-[6px] md:w-[10px] h-[6px]  md:h-[10px] rounded-full border border-black"
 
          activeClassName="active bg-[#23262F] rounded-full"
         
-         containerClassName="pagination flex  items-center"
+         containerClassName="pagination flex  items-center justify-center mt-[35px] md:mt-0"
       />
     </>
   );

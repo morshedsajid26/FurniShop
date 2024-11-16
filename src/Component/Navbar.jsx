@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className='absolute w-full py-7'>
-        <Container className='w-[337px] md:w-full flex items-center justify-between'>
+        <Container className='w-[340px] md:w-full flex items-center justify-between'>
             <div className="logo">
                 <Image className='w-[116px] md:w-[174px]' src={logo}/>
             </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div onClick={()=> setShow(!show)} className='block md:hidden'>
 
 
-          <HiMiniBars3CenterLeft className='w-6 h-6 text-white cursor-pointer'/>
+          <HiMiniBars3CenterLeft className='w-6 h-6 text-white cursor-pointer absolute top-1/2 -translate-y-1/2 right-100% -translate-x-[100%]   '/>
 
         </div>
         </Container>

@@ -5,7 +5,7 @@ import Image from './Image'
 const ProductCard = ({price,src,className,mainPrice,pName}) => {
   return (
     
-          <div className={`w-[290px] ${className}`} >
+          <div className={`w-[160px] md:w-[290px] ${className}`} >
                         
                         <div className='image relative'>
                         <Image imageClass='  border border-[#102637]/10 rounded-[16px]'  src={src}/>
@@ -15,11 +15,11 @@ const ProductCard = ({price,src,className,mainPrice,pName}) => {
                         </div>
 
                         <div className='name'>
-                            <h1 className='font-Saira text-[24px] font-semibold text-[#23262F] mt-4 mb-2'>{pName}</h1>
+                            <h1 className='font-Saira text-[16px] md:text-[24px] font-semibold text-[#23262F] mt-4 mb-2'>{pName}</h1>
                             
-                            <p className='font-Saira text-[16px] text-[#23262F]'>
+                            <p className='font-Saira text-[12px] md:text-[16px] text-[#23262F]'>
                                  {price}
-                                <del className='text-[14px] text-[#898989] ml-[18px]'>{mainPrice}</del></p>
+                                <del className='text-[10px] md:text-[14px] text-[#898989] ml-[18px]'>{mainPrice}</del></p>
                         </div>
 
 
