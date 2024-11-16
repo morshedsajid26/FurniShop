@@ -20,7 +20,8 @@ function SampleNextArrow(props) {
       style={{ ...style, display: "flex", background: "" }}
       onClick={onClick}
     >
-      <div><FaArrowRight  className='text-[#23262F] ' />
+      <div className='w-full h-full flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300'>
+        <FaArrowRight/>
       </div>
     </div>
   );
@@ -34,7 +35,8 @@ function SamplePrevArrow(props) {
       style={{ ...style,display: "flex",background: "" }}
       onClick={onClick}
     >
-       <div><FaArrowLeft className='text-[#23262F] ' />
+       <div className='w-full h-full flex items-center justify-center text-[#23262F] hover:text-white transition-all duration-300'>
+        <FaArrowLeft/>
        </div>
     </div>
   );
@@ -65,31 +67,14 @@ const Review = () => {
         <h1 className='font-Saira font-semibold text-[40px] text-[#23262F] '>What people are saying about us</h1>
 
 
-         {/* <div className="review w-[570px] bg-slate-100 mt-[32px]">
-
-      <div className='flex items-center gap-x-5'>
-    <div>
-        <Image src={user}/>
-    </div>
-    <div >
-        <h3 className='font-Saira font-semibold text-[20px] text-[#23262F]'>Josh Smith</h3>
-        <p className='font-Saira text-[14px] text-[#23262F]/70'>Manager of The New York Times</p>
-
-    </div>
-    
-
-</div>
-
-<p className='font-Saira text-[20px] text-[#23262F] w-[570px] mt-[29px]'>“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”</p>
-
-        </div> */}
+         
 
         
-    <div className='max-w-[570px]'>
+    <div className='slider max-w-[570px]'>
     <Slider {...settings}>
 
 
-<div className="review w-[570px] bg-slate-100 mt-[32px]">
+<div className="review w-[570px] mt-[32px]">
 
 <div className='flex items-center gap-x-5'>
 <div>
@@ -111,21 +96,7 @@ const Review = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="review w-[570px] bg-slate-100 mt-[32px]">
+<div className="review w-[570px]  mt-[32px]">
 
 <div className='flex items-center gap-x-5'>
 <div>
@@ -143,10 +114,6 @@ const Review = () => {
 <p className='font-Saira text-[20px] text-[#23262F] w-[570px] mt-[29px]'>“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”</p>
 
 </div>
-
-
-
-
 
 
 
