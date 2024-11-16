@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
   const {  style, onClick } = props;
   return (
     <div
-      className='absolute w-[50px] h-[50px] left-[74px] bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow  hover:bg-[#286F6C] hover:text-white transition-all duration-300 cursor-pointer '
+      className='absolute w-[50px] h-[50px] left-[74px] bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow  hover:bg-[#286F6C]  transition-all duration-300 cursor-pointer '
       style={{ ...style, display: "flex", background: "" }}
       onClick={onClick}
     >
@@ -31,7 +31,7 @@ function SamplePrevArrow(props) {
   const {  style, onClick } = props;
   return (
     <div
-     className='absolute w-[50px] h-[50px] left-0  bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow hover:bg-[#286F6C] hover:text-white transition-all duration-300 cursor-pointer'
+     className='absolute w-[50px] h-[50px] left-0  bottom-[-45px] -translate-y-[-45px] rounded-full items-center justify-center bg-[#FFFFFF] shadow hover:bg-[#286F6C]  transition-all duration-300 cursor-pointer'
       style={{ ...style,display: "flex",background: "" }}
       onClick={onClick}
     >
