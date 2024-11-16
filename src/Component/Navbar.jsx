@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="menu flex gap-[64px] w-[px]">
+            <div className="menu flex gap-[64px] ">
                 <Li liText='Home'/>
                 <Li liText='About'/>
                 <Li liText='Features'/>
