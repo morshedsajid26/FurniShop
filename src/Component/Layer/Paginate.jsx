@@ -6,7 +6,7 @@ import ProductCard from './ProductCard';
 import product4 from '/product4.png'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 13, 14];
+const items = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 13, 14];
 
 
 function Items({ currentItems }) {
