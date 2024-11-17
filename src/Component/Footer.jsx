@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='bg-[#23262F] pt-[65px] pb-[20px]'>
-        <Container className='w-[330px] md:w-full' >
+        <Container className='w-[340px] md:w-full' >
             <div className="top md:flex justify-between items-center md:border-b md:border-[#EAEEF3] pb-[48px] ">
                 <div className="logo">
                     <Image src={footerLogo}/>

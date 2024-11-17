@@ -7,8 +7,8 @@ const Order = () => {
   return (
     <>
         <div className=' bg-[url(/order.png)] bg-cover bg-center bg-no-repeat  '>
-        <Container className='pt-[40px] md:pt-[100px] pb-[40px] md:pb-[142px] flex  justify-center md:justify-end'>
-            <div className=' w-[340px] md:w-[558px]'>
+        <Container className='w-[340px] md:w-[558px] pt-[40px] md:pt-[100px] pb-[40px] md:pb-[142px] flex  justify-center md:justify-end'>
+            <div >
                 <div className='flex flex-col text-center md:text-left items-center md:items-start'>
                 <h1 className='font-Saira font-semibold text-[24px] md:text-[40px] text-white w-[299px] md:w-[349px] '>Get more discount 
                 Off your order</h1>
