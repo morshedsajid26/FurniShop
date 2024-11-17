@@ -4,7 +4,7 @@ import Container from './Layer/Container'
 const NewStore = () => {
   return (
     <div>
-        <Container>
+        <Container className='w-[340px] md:w-full '>
                  NewStore
         </Container>
     </div>

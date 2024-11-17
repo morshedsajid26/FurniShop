@@ -60,8 +60,8 @@ const Review = () => {
   };
 
   return (
-    <div >
-       <Container className=' w-[340px] md:w-full md:flex justify-between pb-[100px] md:py-[70px]'>
+    <div>
+       <Container className=' w-[340px] md:w-full md:flex justify-between pt-[50px] pb-[100px] md:py-[70px]'>
        <div className="text">
 
         <h1 className='font-Saira font-semibold text-[24px] md:text-[40px] text-[#23262F] '>What people are saying about us</h1>

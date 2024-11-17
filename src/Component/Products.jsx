@@ -17,7 +17,7 @@ import Paginate from './Layer/Paginate'
 const Products = () => {
   return (
     <div>
-        <Container className='md:py-[70px] w-[340px] md:w-full'>
+        <Container className='py-[50px] md:py-[70px] w-[340px] md:w-full'>
             <div className="title flex flex-col items-center text-center mb-[69px] gap-y-4 ">
                 <h1 className='font-Saira text-[24px] md:text-[40px] font-semibold text-[#23262F]'>All Product</h1>
                 <p className='font-Saira text-[14px] md:text-[16px] text-[#23262F] md:w-[539px]'>The products we provide only for you as our service are selected from the
