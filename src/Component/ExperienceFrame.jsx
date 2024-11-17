@@ -4,8 +4,8 @@ import Container from './Layer/Container'
 const ExperienceFrame = () => {
   return (
     <div className=' absolute -top-[70px]  left-1/2 -translate-x-1/2' >
-            <Container className='w-[340px] md:w-full'>
-                    <div className=' bg-[#286F6C] py-[40px] md:py-[37px] text-center grid grid-cols-2 grid-rows-2 gap-y-[62px]  md:flex justify-around  rounded-[20px] pl-[30px] md:pl-0  '>
+            <Container className=''>
+                    <div className=' w-[340px] md:w-[1240px] bg-[#286F6C] py-[40px] md:py-[37px] text-center grid grid-cols-2 grid-rows-2 gap-y-[62px]  md:flex justify-around  rounded-[20px] pl-[30px] md:pl-0  '>
                     
                     <div className=' relative ml-[18px] md:ml-0 w-[76px] md:w-[112px] after:absolute after:content-[""] after:w-[1px]  after:h-[60px] md:after:h-[111px] after:bg-white after:top-0  after:-right-[45px] md:after:-right-[95px] items-center  '>
                         <h1 className='font-Saira font-semibold text-[24px] md:text-[40px] text-white'>7</h1>

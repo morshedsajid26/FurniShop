@@ -15,7 +15,7 @@ const Service = () => {
           <ExperienceFrame/>
 
         <Container className='w-[340px] md:w-full  md:flex md:flex-row gap-x-[100px]' >
-            <div className="image w-[340px] md:w-[554px] md:block hidden rounded-[5px] overflow-hidden">
+            <div className="image w-[340px] md:w-[554px] md:block hidden rounded-[5px]">
                <Image  src={service}/>
             </div>
             <div className="text w-[340px] md:w-[579px] ">
