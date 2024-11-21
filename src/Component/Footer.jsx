@@ -7,6 +7,8 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+
+    const currentYear = new Date().getFullYear();
   return (
     <div className='bg-[#23262F] pt-[65px] pb-[20px]'>
         <Container className='w-[340px] md:w-full' >
@@ -147,7 +149,7 @@ const Footer = () => {
 
             </div>
 
-            <p className='font-Inter text-[12px] md:text-[14px] text-white text-center mt-[70px] md:mt-[70px]'>© NameBrand 2022 - All Rights Reserved</p>
+            <p className='font-Inter text-[12px] md:text-[14px] text-white text-center mt-[70px] md:mt-[70px]'>© NameBrand {currentYear}{' '}- All Rights Reserved</p>
             
         </Container>
     </div>
